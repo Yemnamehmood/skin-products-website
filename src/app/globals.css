@@ -1,27 +1,232 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* App Container */
+.app-container {
+  background: linear-gradient(to bottom right, #4c2c3a, #1c1c1c); /* Gradient from dark pinkish to blackish */
+  color: #e0e0e0; /* Light gray text for better contrast */
+  min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Header */
+.header {
+  padding: 1rem;
+  background-color: rgba(46, 46, 46, 0.9); /* Semi-transparent darker header for contrast */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d63f8a; /* Vibrant pink for the logo */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #e0e0e0; /* Light gray color for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d63f8a; /* Vibrant pink on hover */
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/images/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Increased text shadow for visibility */
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 4rem; /* Larger title for visibility */
+  font-weight: bold;
+  color: #e0e0e0; /* Light gray for title */
+}
+
+.home-description {
+  margin-top: 1rem;
+  font-size: 1.25rem; /* Slightly larger description font */
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 5rem 0;
+  background-color: rgba(46, 46, 46, 0.9); /* Darker background for gallery */
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #d63f8a; /* Vibrant pink for title */
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem; /* Space between gallery items */
+}
+
+/* Product Card */
+.product-card {
+  background-color: #3c3c3c; /* Darker gray for product cards */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Product Image */
+.product-image {
+  border-radius: 0.5rem; /* Rounded corners */
+  object-fit: cover; /* Prevent distortion */
+  max-width: 100%; /* Ensure it fits within the card */
+  height: 200px; /* Fixed height for uniformity */
+}
+
+/* Product Title */
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #d63f8a; /* Vibrant pink for product title */
+}
+
+/* Product Description */
+.product-description {
+  margin-top: 0.5rem;
+  color: #b0b0b0; /* Light gray for description */
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 5rem 0;
+  background-color: rgba(46, 46, 46, 0.9); /* Darker background for contact section */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #d63f8a; /* Vibrant pink for contact title */
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background-color: #3c3c3c; /* Darker gray for form */
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Form Label */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Form Input */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff; /* White input */
+  color: #3b3b3b; /* Dark text */
+  border: 1px solid #ccc; /* Light border */
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background-color: #d63f8a; /* Vibrant pink button */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #c6286b; /* Darker pink on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #1c1c1c; /* Dark gray for footer */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 3rem; /* Smaller title on mobile */
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .home-description {
+    font-size: 1rem; /* Smaller description */
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .gallery-title {
+    font-size: 2rem; /* Smaller gallery title */
+  }
+
+  .product-title {
+    font-size: 1.25rem; /* Smaller product title */
+  }
+
+  .contact-title {
+    font-size: 2rem; /* Smaller contact title */
+  }
+
+  .form-input,
+  .submit-button {
+    padding: 0.5rem; /* Smaller padding on inputs/buttons */
   }
 }
