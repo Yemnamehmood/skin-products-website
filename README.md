@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Luxury Skincare Products Website
+
+## Description
+This project is a beautifully designed web application showcasing a collection of luxurious skincare products. It is developed using **Next.js** and **CSS** for styling, aimed at providing users with an immersive experience to explore various skincare offerings.
+
+## Features
+- **Responsive Design**: The website is optimized for both desktop and mobile views, ensuring a seamless experience across devices.
+- **Interactive Gallery**: Users can browse through a stunning gallery of skincare products with vivid images and descriptions.
+- **User-Friendly Navigation**: Simple and intuitive navigation to easily access different sections, including Home, Gallery, and Contact Us.
+- **Contact Form**: Users can reach out for inquiries through an easy-to-use contact form.
+
+## Technologies Used
+- **Frontend**: Next.js, HTML, CSS
+- **Styling**: Custom styles in `global.css` for a unique aesthetic
+- **Images**: High-quality product images to enhance visual appeal
 
 ## Getting Started
+To run this project locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/your-username/skin-products-website.git`
+2. Navigate to the project directory: `cd skin-products-website`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and navigate to `http://localhost:3000`
 
-First, run the development server:
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or additional features, please feel free to submit a pull request or open an issue.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Author
+**Yemna Mehmood** - Passionate about skincare and web development, striving to create beautiful and functional web applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
